@@ -1,59 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-				<!-- Bootstrap CSS -->
-				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-					<style>
-    .carda{
-    text-align:center;
-    color:#FFFFFF;
-    font-weight:bold;
-    
-    background-image:  url("https://lh3.googleusercontent.com/proxy/pa4kr_k8ZTYUaDxT_4L7_AjXBWZqsWwxSuzFySLc5iHx2PfCr7OEb0xVXtotxzRGSWqBZzUk8eYc3-gsvkzdx07Q1qZ8gKo");
- 
-}
-.card-img-top{
-width:30%;
-height:auto;
-overflow:auto;
-}
-div{
-width: auto;
-  margin: 0%;
-}
-p{
-text-align:center;
-font-weight:bold;
-font-style:italic;
-}
-.card-text{
-text-align:left;
-}
-</style>
-				</head>
-				<body>
-					<div class="container-fluid">
-						<div class="carda">
-							<div class="card-block">
-								<h1>Central Intelligence Agency</h1>
-								<h6 class="card-subtitle">The Work of A Nation</h6>
-							</div>
-						</div>
-						<div class="card">
-							<img class="card-img-top" src="https://imgc.artprintimages.com/img/print/dog-in-sweater-and-glasses_u-l-pzldzd0.jpg?h=550&p=0&w=550&background=fbfbfb" alt="A Smart Dog">
-								<div class="card-block">
-									<p class="card-text">
-										<h3>Agent Zola</h3>
-										<h5>Special Narcotic Detective</h5>
-										<h6>Id No: 45345</h6>
-									</div>
-								</div>
-								<!-- jQuery first, then Tether, then Bootstrap JS. -->
-								<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-								<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-								<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-							</body>
-						</html>
+
+<head>
+    <title>Bootstrap Sample!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <style>
+        html {
+            font-family: sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%
+        }
+
+        article,
+        button,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        main,
+        menu,
+        nav,
+        section,
+        summary {
+            display: block
+        }
+
+        body {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        header, button {
+            margin: 0;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        header ul {
+            padding: 20px 0 0 0;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 0;
+        }
+
+        img {
+            margin: 0;
+            max-width: 100%;
+            padding: 0;
+            vertical-align: middle;
+        }
+
+        p {
+            color: #180D0E;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.03em;
+            line-height: 30px;
+            margin: 8px 0;
+            padding: 0 8%;
+            text-decoration: none;
+            width: 84%;
+        }
+
+        #responsiveimage {
+            width: 20%;
+            padding: 0;
+            float: center;
+            margin: 0 40%;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-rows: auto;
+            grid-gap: 10px;
+            grid-auto-flow: dense;
+            padding: 10px;
+        }
+
+        main div {
+            width: 100%;
+            height: 100%;
+            padding: 20px 0;
+            text-align: center;
+            background-color: #EFF;
+            object-fit: cover;
+        }
+        
+        main div p {
+            padding: 0;
+            width: 100%;
+        }
+        
+        main div img {            
+            max-height: 100%;
+            display: block;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        main div:nth-child(4n) {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        main div:nth-child(8n) {
+            grid-column: span 3;
+            grid-row: span 3;
+        }
+
+        .container {
+            min-width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+        <ul>
+            <li><a href="css_demo.html">CSS demo!</a></li>
+            <li><a href="font-sample.html">Font demo!</a></li>
+            <li><a href="bootstrap-sample.html">Bootstrap demo!</a></li>
+        </ul>
+        <img src="https://josiahswanson.com/img/580413_PS_PAW_BILL_SUIT-scaled.jpg" alt="palm tree"
+            id="responsiveimage">
+        </header>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">I am a button. Press me and see what happens.</span>
+        </button>
+        <main>
+            <div>
+                <p>This is the day that the LORD has made...</p>
+            </div>
+            <div>
+                <p>Yup, that's right...</p>
+            </div>
+            <div><img src="https://cdn.theatlantic.com/static/mt/assets/science/cat_caviar.jpg" alt="gangster cat">
+            </div>
+            <div>
+                <p>How Cool!</p>
+            </div>
+            <div>
+                <img src="https://st2.depositphotos.com/1594920/8612/i/600/depositphotos_86121910-stock-photo-british-shorthair-wearing-glasses-and.jpg" alt="What a silly kitty!">
+                <p>What a silly Kitty!</p>
+            </div>
+        </main>
+    </div>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
